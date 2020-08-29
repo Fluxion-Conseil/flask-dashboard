@@ -9,7 +9,7 @@ from filterArray import generateValues, exportToJson
 
 app = Flask(__name__)
 
-manager = Manager(app)
+#manager = Manager(app)
 
 # Generate the raw data
 fileName = "data_source.csv"
@@ -41,4 +41,4 @@ def getPlot():
 
 
 if __name__ == '__main__':
-    manager.run()
+    app.run(debug=True)
